@@ -1,42 +1,134 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Mogu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>MoguStudio | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    <h2 class="logo">Mogu</h2>
-    <ul>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#projects">Project</a></li>
-    </ul>
-</nav>
-
-<header>
-    <h1>Halo, Aku Mogu 👋</h1>
-    <p>CLI Enthusiast | Python Learner | Future Web Dev</p>
-</header>
-
-<section id="about">
-    <h2>Tentang Aku</h2>
-    <p>Aku suka ngoding pakai Termux dan Neovim. Lagi belajar Web Dev dari nol.</p>
-</section>
-
-<section id="projects">
-    <h2>Project</h2>
-    <div class="card">
-        <h3>CLI To-Do App</h3>
-        <p>Aplikasi manajemen tugas berbasis terminal dengan Python.</p>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <h3>MoguStudio</h3>
     </div>
-</section>
 
-<footer>
-    <p>© 2026 Namamu</p>
-</footer>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="https://github.com/Mogu2709" target="_blank" class="github-icon">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+    <canvas id="bg"></canvas>
+
+    <h1>Hi, I'm Mogu</h1>
+    <p>Python Developer • Front-End Developer • Web Development</p>
+    <a href="#projects" class="cta">View My Work</a>
+  </header>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section glass">
+    <h2>About Me</h2>
+
+    <p class="about-intro">
+      I'm a frontend-focused developer who enjoys building interactive
+      and visually engaging digital experiences.
+    </p>
+
+    <p>
+      While I'm currently growing as a Python developer and exploring
+      automation systems, my strength lies in crafting modern web
+      interfaces with clean structure, smooth interaction, and strong visual presence.
+    </p>
+
+    <p>
+      I enjoy experimenting with motion, 3D graphics, and performance-oriented UI —
+      turning ideas into experiences rather than just static pages.
+    </p>
+
+    <div class="about-tags">
+      <span>Frontend Engineering</span>
+      <span>Interactive UI</span>
+      <span>WebGL / Three.js</span>
+      <span>Python (Learning & Growing)</span>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>CLI GAME – SHADOW OF TERMUX</h3>
+      <p>Simple CLI RPG game playable directly in your terminal.</p>
+
+      <div class="buttons">
+        <a href="https://github.com/Mogu2709/shadow-of-termux" target="_blank" class="btn-solid">
+          Source Code
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>CLI-TODO</h3>
+      <p>Simple CLI todo manager for productivity in your terminal.</p>
+
+      <div class="buttons">
+        <a href="https://github.com/Mogu2709/Todo-CLI" target="_blank" class="btn-solid">
+          Source Code
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio showcasing my work and experiments.</p>
+
+      <div class="buttons">
+        <a href="https://mogu2709.github.io/portofolio-/" target="_blank" class="btn-outline">
+          Live Demo
+        </a>
+        <a href="https://github.com/Mogu2709/portofolio-" target="_blank" class="btn-solid">
+          Source Code
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 MoguStudio
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
